@@ -448,12 +448,16 @@ export default function GeorgiaMBBSFullContent() {
             <section className="bg-medical p-16 rounded-[60px] text-center text-white">
                 <h2 className="text-4xl font-black mb-8 leading-tight">Start Your Medical Career in Georgia Today</h2>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">
+                    <a href='/cta'>
+                        <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">
                         FREE COUNSELING
                     </button>
-                    <button className="bg-white text-navy px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">
-                        UNIVERSITY BROCHURES
-                    </button>
+                    </a>
+                    <a href='/countries'>
+                        <button className="bg-white text-navy px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">
+                            Explore Other Destinations
+                        </button>
+                    </a>
                 </div>
             </section>
 

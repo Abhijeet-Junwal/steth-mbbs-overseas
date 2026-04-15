@@ -397,7 +397,9 @@ export default function UzbekistanMBBSFullContent() {
                 <div className="relative z-10">
                   <h2 className="text-4xl font-black mb-8 leading-tight">Secure Your MBBS Admission in Uzbekistan 2026</h2>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">CONSULT AN EXPERT</button>
+                  <a href='/cta'>
+                    <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">CONSULT AN EXPERT</button>
+                  </a>
                   <button className="bg-white text-navy px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">GET FREE BROCHURE</button>
                   </div>
                 </div>

@@ -17,7 +17,7 @@ export default function Contact() {
     };
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbx1_4-WwWBU72PJf-1MsSgOwnwI82z31I-6RGW31I7zZql1A9m8zpgje6gvDH0hN9MgNQ/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbxzS9IuyYttqmGG3-T_Upks7dkfg4oH8gqwYebBsgPaK-pSmlHqjsgLQiIHEtzP8KjH/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },

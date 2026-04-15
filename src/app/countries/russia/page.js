@@ -363,12 +363,14 @@ export default function RussiaMBBSFullContent() {
             <section className="bg-medical p-16 rounded-[60px] text-center text-white">
                 <h2 className="text-4xl font-black mb-8 leading-tight">Secure Your MBBS Admission in Russia for 2026</h2>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">
-                    CONSULT OUR EXPERTS
-                </button>
-                <button className="bg-white text-navy px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">
+                <a href='/cta'>
+                    <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">
+                        CONSULT OUR EXPERTS
+                    </button>
+                </a>
+                {/* <button className="bg-white text-navy px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">
                     GET FREE BROCHURE
-                </button>
+                </button> */}
                 </div>
             </section>
 

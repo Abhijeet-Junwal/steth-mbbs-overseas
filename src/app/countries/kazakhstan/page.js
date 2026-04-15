@@ -301,7 +301,9 @@ export default function KazakhstanMBBSFullContent() {
             <section className="bg-medical p-16 rounded-[60px] text-center text-white shadow-xl">
                 <h2 className="text-4xl font-black mb-8 leading-tight">Apply for 2026 Admissions in Kazakhstan Today</h2>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">CONSULT AN EXPERT</button>
+                    <a href='cta'>
+                        <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">CONSULT AN EXPERT</button>
+                    </a>
                     <button className="bg-white text-navy px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all uppercase">GET BROCHURE</button>
                 </div>
             </section>

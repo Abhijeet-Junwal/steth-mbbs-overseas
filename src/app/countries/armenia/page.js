@@ -316,7 +316,7 @@ export default function ArmeniaMBBSFullContent() {
             </section>
 
             {/* SECTION 8: POPULAR DESTINATIONS GRID */}
-            <section className="mb-20">
+            <section className="mb-20 max-w-5xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-display font-black text-navy mb-4">
                         Popular MBBS Destination For Indian Students
@@ -324,16 +324,41 @@ export default function ArmeniaMBBSFullContent() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                    {destinations.map((item, i) => (
+                    {[
+                        { name: "Russia", img: "https://plus.unsplash.com/premium_photo-1697729923597-13ac2cce0ab7?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", slug: "russia" },
+                        { name: "Uzbekistan", img: "https://images.unsplash.com/photo-1664602078796-68ee76b3fc59?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXpiZWtpc3RhbnxlbnwwfDB8MHx8fDA%3D", slug: "uzbekistan" },
+                        { name: "Kazakhstan", img: "https://images.unsplash.com/photo-1666975823342-3b755b3784d4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2F6YWtoc3RhbnxlbnwwfDB8MHx8fDA%3D", slug: "kazakhstan" },
+                        { name: "Kyrgyzstan", img: "https://plus.unsplash.com/premium_photo-1697729404559-25e36fc1fa8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc3fHxreXJneXpzdGFufGVufDB8MHwwfHx8MA%3D%3D", slug: "kyrgyzstan" },
+                        { name: "India", img: "https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWF8ZW58MHwwfDB8fHww", slug: "india" },
+                        { name: "Philippines", img: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGhpbGlwcGluZXN8ZW58MHwwfDB8fHww", slug: "philippines" },
+                        { name: "Nepal", img: "https://images.unsplash.com/photo-1623492701360-fb4a1205c789?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG5lcGFsfGVufDB8MHwwfHx8MA%3D%3D", slug: "nepal" },
+                        { name: "Georgia", img: "https://images.unsplash.com/photo-1596276614984-a916480dc736?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM0fHxnZW9yZ2lhfGVufDB8MHwwfHx8MA%3D%3D", slug: "georgia" },
+                    ].map((item, i) => (
                         <a 
                             href={`/countries/${item.slug}`} 
                             key={i} 
-                            className="group relative bg-white border border-gray-100 p-6 rounded-[32px] hover:border-medical/40 hover:shadow-2xl transition-all duration-500 shadow-sm"
+                            className="group bg-white rounded-xl w-full overflow-hidden border border-gray-100 hover:border-medical/40 transition-all duration-500 shadow-sm "
                         >
-                            <div className="flex justify-between items-center">
-                                <span className="text-3xl">{item.flag}</span>
-                                <h4 className="text-lg font-black text-navy group-hover:text-medical transition-colors">MBBS in {item.name}</h4>
-                                <div className="w-10 h-10 rounded-full bg-ghost group-hover:bg-medical group-hover:text-white flex items-center justify-center transition-all">→</div>
+                            {/* Image Wrapper */}
+                            <div className="h-30 overflow-hidden relative">
+                                <img 
+                                    src={item.img} 
+                                    alt={`MBBS in ${item.name}`} 
+                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+                            
+                            {/* Content */}
+                            <div className="p-3">
+                                <h4 className="text-xl font-display font-bold text-navy mb-2  transition-colors">
+                                    {item.name}
+                                </h4>
+                                    
+                                    <div className="flex items-center gap-1 text-medical  text-xs font-mono tracking-widest">
+                                        Explore <span className="group-hover:translate-x-1 transition-transform">&gt;</span>
+                                    </div>
+                                
                             </div>
                         </a>
                     ))}
@@ -368,8 +393,12 @@ export default function ArmeniaMBBSFullContent() {
             <section className="bg-medical p-16 rounded-[60px] text-center text-white shadow-xl">
                 <h2 className="text-4xl font-black mb-8 leading-tight">Apply for European Standards MBBS in Armenia</h2>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">CONSULT AN EXPERT</button>
-                    <button className="bg-white text-navy px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all uppercase">GET BROCHURE</button>
+                    <a href='/cta'>
+                        <button className="bg-navy text-white px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all">
+                            CONSULT AN EXPERT 
+                        </button>
+                    </a>
+                    {/* <button className="bg-white text-navy px-12 py-5 rounded-2xl font-black text-xs tracking-widest hover:scale-105 transition-all uppercase">GET BROCHURE</button> */}
                 </div>
             </section>
         </main>

@@ -37,7 +37,7 @@ export default function Navbar() {
   // Logic for Background Classes
   const navBg = isHomePage 
     ? (isScrolled ? "bg-[#20282d]/90 backdrop-blur-md py-4 shadow-lg border- border-gray-100" : "bg-transparent py-6")
-    : "bg-[#20282d]/90 py-4 shadow-xl border-b border-white/5";
+    : "bg-[#1b273d] md:bg-[#20282d]/90 backdrop-blur-md py-4 shadow-xl border-b border-white/5";
 
   return (
     <nav className={`fixed w-full z-[100] transition-all duration-500 ${navBg}`}>
