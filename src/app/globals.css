@@ -1,11 +1,30 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* This is how you define custom colors in Tailwind v4 */
+  --color-navy: #1B365D;
+  --color-medical: #10b981;
+  --color-ghost: #f8fafc;
+  --font-sans: var(--font-jakarta);
+  --font-display: var(--font-syne);
 }
 
-@theme inline {
+/* Fix for background/text visibility */
+:root {
+  background-color: white;
+  color: #1B365D;
+}
+
+/* Standard CSS Reset to ensure white background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: var(--font-jakarta);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -22,5 +41,4 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+} */
