@@ -6,22 +6,30 @@ import { HiOutlineChevronDown, HiOutlineCheckCircle, HiOutlineGlobeAlt, HiOutlin
 export default function RussiaMBBSFullContent() {
     const [activeFaq, setActiveFaq] = useState(null);
     
+    // const universities = [
+    //     { name: "Kazan State Medical University", established: "1814", fee: "₹5.50L / Yr", total: "₹33.00L" },
+    //     { name: "Orenburg State Medical University", established: "1944", fee: "₹4.80L / Yr", total: "₹28.80L" },
+    //     { name: "Bashkir State Medical University", established: "1932", fee: "₹3.60L / Yr", total: "₹21.60L" },
+    //     { name: "Mari State University", established: "1972", fee: "₹3.80L / Yr", total: "₹22.80L" },
+    //     { name: "Perm State Medical University", established: "1916", fee: "₹4.20L / Yr", total: "₹25.20L" },
+    //     { name: "Pirogov Russian NRM University", established: "1906", fee: "₹6.10L / Yr", total: "₹36.60L" },
+    //     { name: "I.M. Sechenov First Moscow State", established: "1758", fee: "₹8.50L / Yr", total: "₹51.00L" },
+    //     { name: "Volgograd State Medical University", established: "1935", fee: "₹4.50L / Yr", total: "₹27.00L" },
+    //     { name: "Crimea Federal University", established: "1918", fee: "₹3.10L / Yr", total: "₹18.60L" },
+    //     { name: "Siberian State Medical University", established: "1888", fee: "₹4.40L / Yr", total: "₹26.40L" },
+    //     { name: "Tver State Medical University", established: "1936", fee: "₹4.10L / Yr", total: "₹24.60L" },
+    //     { name: "Kursk State Medical University", established: "1935", fee: "₹4.90L / Yr", total: "₹29.40L" },
+    //     { name: "Omsk State Medical University", established: "1920", fee: "₹2.90L / Yr", total: "₹17.40L" },
+    //     { name: "Far Eastern Federal University", established: "2010", fee: "₹4.30L / Yr", total: "₹25.80L" },
+    //     { name: "Pskov State University", established: "1932", fee: "₹2.70L / Yr", total: "₹16.20L" },
+    //   ];
+
     const universities = [
-        { name: "Kazan State Medical University", established: "1814", fee: "₹5.50L / Yr", total: "₹33.00L" },
-        { name: "Orenburg State Medical University", established: "1944", fee: "₹4.80L / Yr", total: "₹28.80L" },
-        { name: "Bashkir State Medical University", established: "1932", fee: "₹3.60L / Yr", total: "₹21.60L" },
-        { name: "Mari State University", established: "1972", fee: "₹3.80L / Yr", total: "₹22.80L" },
-        { name: "Perm State Medical University", established: "1916", fee: "₹4.20L / Yr", total: "₹25.20L" },
-        { name: "Pirogov Russian NRM University", established: "1906", fee: "₹6.10L / Yr", total: "₹36.60L" },
-        { name: "I.M. Sechenov First Moscow State", established: "1758", fee: "₹8.50L / Yr", total: "₹51.00L" },
-        { name: "Volgograd State Medical University", established: "1935", fee: "₹4.50L / Yr", total: "₹27.00L" },
-        { name: "Crimea Federal University", established: "1918", fee: "₹3.10L / Yr", total: "₹18.60L" },
-        { name: "Siberian State Medical University", established: "1888", fee: "₹4.40L / Yr", total: "₹26.40L" },
-        { name: "Tver State Medical University", established: "1936", fee: "₹4.10L / Yr", total: "₹24.60L" },
-        { name: "Kursk State Medical University", established: "1935", fee: "₹4.90L / Yr", total: "₹29.40L" },
-        { name: "Omsk State Medical University", established: "1920", fee: "₹2.90L / Yr", total: "₹17.40L" },
-        { name: "Far Eastern Federal University", established: "2010", fee: "₹4.30L / Yr", total: "₹25.80L" },
-        { name: "Pskov State University", established: "1932", fee: "₹2.70L / Yr", total: "₹16.20L" },
+        { name: "Ural State Medical University", established: "1930", fee: "₽ 3.6L / Yr", total: "₽ 21.6L" },
+        { name: "Samara State Medical University", established: "1957", fee: "₽ 4.5L / Yr", total: "₽ 27.00L" },
+        { name: "Kabardino Balkarian State Medical University", established: "1932", fee: "₽ 3.24L / Yr", total: "₽ 19.44L" },
+        { name: "North Caucasian State Academy", established: "1936", fee: "₽ 3.5L / Yr", total: "₽ 21.00L" },
+        { name: "Amur State Medical Academy", established: "1952", fee: "₽ 3.25L / Yr", total: "₽ 19.50L" },
       ];
     
     const faqs = [

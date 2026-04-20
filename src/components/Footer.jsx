@@ -3,7 +3,9 @@ import {
   HiOutlineEnvelope, HiOutlinePhone, HiOutlineMapPin,
   HiOutlineArrowRight
 } from "react-icons/hi2";
-import { FaInstagram, FaYoutube, FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,8 +21,8 @@ export default function Footer() {
     { icon: <FaInstagram />, link: "https://www.instagram.com/steth_overseas?igsh=ZXFicGhldnZiN2Ji" },
     { icon: <FaFacebookF />, link: "#" },
     { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/steth-overseas-education-5514b8401?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
-    { icon: <FaYoutube />, link: "#" },
-    { icon: <FaTwitter />, link: "#" },
+    // { icon: <FaYoutube />, link: "#" },
+    { icon: <FaXTwitter />, link: "https://x.com/StethEducation" },
   ];
 
   return (

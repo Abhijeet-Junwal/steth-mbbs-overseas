@@ -73,9 +73,11 @@ export default function Services() {
               </ul>
             </div>
 
-            <button className="relative z-10 w-full md:w-fit bg-medical text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-navy transition-all shadow-lg active:scale-95">
+            <a href='/cta'>
+              <button className="relative z-10 w-full md:w-fit bg-medical text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-navy transition-all shadow-lg active:scale-95">
               Start Your Journey
             </button>
+            </a>
           </div>
 
           {/* Documentation & Visa Block */}

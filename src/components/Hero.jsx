@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="text-center lg:text-left space-y-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
             <HiOutlineShieldCheck className="text-medical text-lg" />
-            <span className="text-white/60 text-[10px] font-black uppercase tracking-[0.2em]">NMC & WHO Recognized 2026</span>
+            <span className="text-white/60 text-[10px] font-black uppercase tracking-[0.2em]">NMC & WHO Recognized Universities 2026</span>
           </div>
 
           <h1 className="text-5xl md:text-8xl font-display font-black text-white leading-[0.9] tracking-tighter">
@@ -89,7 +89,7 @@ export default function Hero() {
             
             {/* Floating Glass Card */}
             <div className="absolute -bottom-10 -left-10 p-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[40px] shadow-2xl max-w-[280px]">
-                <p className="text-medical font-black text-4xl mb-2">10+</p>
+                <p className="text-medical font-black text-4xl mb-2">7+</p>
                 <p className="text-white font-bold text-sm leading-tight">Years of expertise in medical education abroad.</p>
             </div>
           </div>

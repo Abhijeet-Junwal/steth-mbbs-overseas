@@ -3,33 +3,42 @@ import { HiOutlineChatBubbleLeftRight, HiOutlineStar } from "react-icons/hi2";
 export default function Testimonials() {
   const reviews = [
     {
-      name: "Aditya Sharma",
-      university: "Tbilisi State Medical University",
-      country: "Georgia",
-      img: "https://i.pravatar.cc/150?u=aditya",
-      text: "Choosing Steth was the best decision. From visa processing to finding a local Indian mess in Tbilisi, they supported me like family. Now in my 3rd year, I couldn't be happier."
+      name: "Vansh Gupta",
+      university: "Osh state university",
+      country: "kyrgystan",
+      // img: "https://i.pravatar.cc/150?u=sneha",
+      img: "/testimonial-2.jpg",
+      text: "Choosing the right university abroad is one of the biggest decisions a medical aspirant will make. Steth Overseas makes this process smooth, clear, and stress-free. A highly reliable consultancy that truly cares about the careers of its students."
+    },
+    {
+      name: "Shaikh Musaib",
+      university: "Asian International University",
+      country: "Kyrgyzstan ",
+      img: "/testimonial-1.jpg",
+      text: "Studying in Kyrgyzstan has been an incredible experience, and I owe a lot of that to the Steth team. They made the entire documentation and visa process effortless. Their guidance allowed me to focus on my medical studies from starting."
     },
     {
       name: "Sneha Reddy",
-      university: "Davao Medical School Foundation",
-      country: "Philippines",
-      img: "https://i.pravatar.cc/150?u=sneha",
-      text: "The US-based curriculum here is amazing. Steth team clearly explained the BS-MD process which was confusing at first. Their on-ground representative was there to pick me up at Manila airport."
-    },
-    {
-      name: "Rohan Verma",
       university: "Kazakh National Medical University",
       country: "Kazakhstan",
       img: "https://i.pravatar.cc/150?u=rohan",
       text: "I wanted a budget-friendly option without compromising quality. Steth suggested Kazakhstan and helped me get a government hostel seat. The processing was 100% transparent."
     },
+    // {
+    //   name: "Priya Das",
+    //   university: "Yerevan State Medical University",
+    //   country: "Armenia",
+    //   img: "https://i.pravatar.cc/150?u=aditya",
+    //   text: "Armenia is so safe and peaceful. Steth helped me with the MEA Apostille and all the documentation which was very overwhelming. They made my dream of becoming a doctor a reality."
+    // }
     {
       name: "Priya Das",
-      university: "Yerevan State Medical University",
-      country: "Armenia",
+      university: "Tbilisi State Medical University",
       img: "https://i.pravatar.cc/150?u=priya",
-      text: "Armenia is so safe and peaceful. Steth helped me with the MEA Apostille and all the documentation which was very overwhelming. They made my dream of becoming a doctor a reality."
-    }
+      country: "Georgia",
+      img: "https://i.pravatar.cc/150?u=aditya",
+      text: "Choosing Steth was the best decision. From visa processing to finding a local Indian mess in Tbilisi, they supported me like family. Now in my 3rd year, I couldn't be happier."
+    },
   ];
 
   return (

@@ -4,7 +4,7 @@ export default function Stats() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         
         <div className="space-y-2">
-          <p className="text-4xl md:text-5xl font-black text-white">10+</p>
+          <p className="text-4xl md:text-5xl font-black text-white">7+</p>
           <p className="text-medical font-medium text-sm tracking-widest uppercase">Years Experience</p>
         </div>
 
