@@ -1,4 +1,5 @@
 import { HiOutlineChatBubbleLeftRight, HiOutlineStar } from "react-icons/hi2";
+import Image from "next/image";
 
 
 export default function Testimonials() {
@@ -7,36 +8,43 @@ export default function Testimonials() {
       name: "Vansh Gupta",
       university: "Osh state university",
       country: "kyrgystan",
-      img: "testimonial-2.jpg",
+      img: "/testimonial-2.jpg",
       text: "Choosing the right university abroad is one of the biggest decisions a medical aspirant will make. Steth Overseas makes this process smooth, clear, and stress-free. A highly reliable consultancy that truly cares about the careers of its students."
     },
     {
       name: "Shaikh Musaib",
       university: "Asian International University",
       country: "Kyrgyzstan ",
-      img: "testimonial-1.jpg",
-      text: "Studying in Kyrgyzstan has been an incredible experience, and I owe a lot of that to the Steth team. They made the entire documentation and visa process effortless. Their guidance allowed me to focus on my medical studies from starting."
+      img: "/testimonial-1.jpg",
+      text: "I had spoken to multiple consultancies before, but Steth felt more genuine. They didn’t push me into a random university and actually explained pros and cons. I’m currently in Asian International University, and I’m happy with my decision."
     },
     {
-      name: "Sneha Reddy",
-      university: "Kazakh National Medical University",
-      country: "Kazakhstan",
-      img: "https://i.pravatar.cc/150?u=rohan",
-      text: "I wanted a budget-friendly option without compromising quality. Steth suggested Kazakhstan and helped me get a government hostel seat. The processing was 100% transparent."
+      name: "Satyam Thomgom",
+      university: "Eurasian International University",
+      country: "Kyrgyzstan",
+      img: "/testimonial-3.jpg",
+      text: "I was honestly confused about which country to choose for MBBS, but Steth Overseas explained everything clearly without rushing me. I finally chose Eurasian International University in Kyrgyzstan, and the entire admission and visa process went smoothly. What I liked most is that they didn’t make false promises"
     },
-    // {
-    //   name: "Priya Das",
-    //   university: "Yerevan State Medical University",
-    //   country: "Armenia",
-    //   img: "https://i.pravatar.cc/150?u=aditya",
-    //   text: "Armenia is so safe and peaceful. Steth helped me with the MEA Apostille and all the documentation which was very overwhelming. They made my dream of becoming a doctor a reality."
-    // }
     {
-      name: "Priya Das",
-      university: "Tbilisi State Medical University",
-      country: "Georgia",
-      img: "https://i.pravatar.cc/150?u=aditya",
-      text: "Choosing Steth was the best decision. From visa processing to finding a local Indian mess in Tbilisi, they supported me like family. Now in my 3rd year, I couldn't be happier."
+      name: "Anmol Pawar",
+      university: "Asian International University",
+      country: "Kyrgyzstan",
+      img: "/testimonial-4.jpg",
+      text: "I would like to sincerely thank you for your guidance and support throughout my admission process. Your help made everything much clearer and easier, and I truly appreciate the time and effort you put into assisting me. I am very grateful for your professionalism and dedication. This opportunity means a lot to me, and I couldn’t have done it without your support.."
+    },
+    {
+      name: "Arpita Rajawat",
+      university: "Asian International University",
+      country: "Kyrgyzstan",
+      img: "/testimonial-5.jpg",
+      text: "My parents were initially not convinced about sending me abroad, especially to Kyrgyzstan. But after counseling with Steth Overseas, all their doubts were cleared. Now I’m studying MBBS here confidently and focusing fully on my studies"
+    },
+    {
+      name: "Vishal Kashyap",
+      university: "Eurasian International University",
+      country: "Kyrgyzstan",
+      img: "/testimonial-6.jpg",
+      text: "My main concern was budget and transparency. Steth guided me to Eurasian International University in Kyrgyzstan and clearly explained all the costs in advance. There were no hidden charges, which I really appreciated"
     },
   ];
 
@@ -77,9 +85,12 @@ export default function Testimonials() {
               </p>
 
               <div className="flex items-center gap-4 border-t border-gray-200 pt-8">
-                <img 
-                  src={item.img} 
-                  alt={item.name} 
+                <Image
+                  src={item.img}
+                  alt={item.name}
+                  width={64}
+                  height={64}
+                  // className="rounded-2xl object-cover grayscale group-hover:grayscale-0 transition-all shadow-lg"
                   className="w-16 h-16 rounded-2xl object-cover grayscale group-hover:grayscale-0 transition-all shadow-lg"
                 />
                 <div>
