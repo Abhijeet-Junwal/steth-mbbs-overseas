@@ -8,42 +8,42 @@ export default function Testimonials() {
       name: "Vansh Gupta",
       university: "Osh state university",
       country: "kyrgystan",
-      img: "/testimonial-2.jpg",
+      img: "/testimonial-2.JPG",
       text: "Choosing the right university abroad is one of the biggest decisions a medical aspirant will make. Steth Overseas makes this process smooth, clear, and stress-free. A highly reliable consultancy that truly cares about the careers of its students."
     },
     {
       name: "Shaikh Musaib",
       university: "Asian International University",
       country: "Kyrgyzstan ",
-      img: "/testimonial-1.jpg",
+      img: "/testimonial-1.JPG",
       text: "I had spoken to multiple consultancies before, but Steth felt more genuine. They didn’t push me into a random university and actually explained pros and cons. I’m currently in Asian International University, and I’m happy with my decision."
     },
     {
       name: "Satyam Thomgom",
       university: "Eurasian International University",
       country: "Kyrgyzstan",
-      img: "/testimonial-3.jpg",
+      img: "/testimonial-3.JPG",
       text: "I was honestly confused about which country to choose for MBBS, but Steth Overseas explained everything clearly without rushing me. I finally chose Eurasian International University in Kyrgyzstan, and the entire admission and visa process went smoothly. What I liked most is that they didn’t make false promises"
     },
     {
       name: "Anmol Pawar",
       university: "Asian International University",
       country: "Kyrgyzstan",
-      img: "/testimonial-4.jpg",
+      img: "/testimonial-4.JPG",
       text: "I would like to sincerely thank you for your guidance and support throughout my admission process. Your help made everything much clearer and easier, and I truly appreciate the time and effort you put into assisting me. I am very grateful for your professionalism and dedication. This opportunity means a lot to me, and I couldn’t have done it without your support.."
     },
     {
       name: "Arpita Rajawat",
       university: "Asian International University",
       country: "Kyrgyzstan",
-      img: "/testimonial-5.jpg",
+      img: "/testimonial-5.JPG",
       text: "My parents were initially not convinced about sending me abroad, especially to Kyrgyzstan. But after counseling with Steth Overseas, all their doubts were cleared. Now I’m studying MBBS here confidently and focusing fully on my studies"
     },
     {
       name: "Vishal Kashyap",
       university: "Eurasian International University",
       country: "Kyrgyzstan",
-      img: "/testimonial-6.jpg",
+      img: "/testimonial-6.JPG",
       text: "My main concern was budget and transparency. Steth guided me to Eurasian International University in Kyrgyzstan and clearly explained all the costs in advance. There were no hidden charges, which I really appreciated"
     },
   ];
