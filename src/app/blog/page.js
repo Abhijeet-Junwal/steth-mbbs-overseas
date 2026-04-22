@@ -11,7 +11,7 @@ export default function BlogPage() {
       date: "Oct 12, 2025",
       author: "Dr. Sandeep",
       category: "NMC Updates",
-      img: "https://images.unsplash.com/photo-1576091160611-259c0dfdbb03?q=80&w=800"
+      img: "https://plus.unsplash.com/premium_photo-1698421947098-d68176a8f5b2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVkaWNhbCUyMG5tY3xlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       id: 2,

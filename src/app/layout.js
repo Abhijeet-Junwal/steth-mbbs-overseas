@@ -17,16 +17,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// export const metadata = {
-//   title: "Steth MBBS Overseas | Trusted Abroad Medical Consultants",
-//   description: "Secure your MBBS admission in Russia, Uzbekistan, Georgia & Egypt with Steth MBBS Overseas. 100% Visa success and NMC approved universities.",
-//   keywords: ["MBBS abroad", "Study MBBS in Russia", "Medical consultancy India", "Steth MBBS"],
-//   openGraph: {
-//     title: "Steth MBBS Overseas",
-//     description: "Your gateway to global medical excellence.",
-//     images: ["/og-image.jpg"], // Create a nice preview image for WhatsApp/Facebook sharing
-//   },
-// };
+export const metadata = {
+  title: "Steth MBBS Overseas | Trusted Abroad Medical Consultants",
+  description: "Secure your MBBS admission in Russia, Uzbekistan, Georgia & Egypt with Steth MBBS Overseas. 100% Visa success and NMC approved universities.",
+  keywords: ["MBBS abroad", "Study MBBS in Russia", "Medical consultancy India", "Steth MBBS"],
+  openGraph: {
+    title: "Steth MBBS Overseas",
+    description: "Your gateway to global medical excellence.",
+    images: ["/og-image.jpg"], // Create a nice preview image for WhatsApp/Facebook sharing
+  },
+  icons: {
+    icon: '/icon.png', // This points to public/icon.png if you put it there
+    apple: '/icon.png', // For iPhones
+  },
+};
 
 export default function RootLayout({ children }) {
   return (

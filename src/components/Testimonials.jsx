@@ -1,20 +1,20 @@
 import { HiOutlineChatBubbleLeftRight, HiOutlineStar } from "react-icons/hi2";
 
+
 export default function Testimonials() {
   const reviews = [
     {
       name: "Vansh Gupta",
       university: "Osh state university",
       country: "kyrgystan",
-      // img: "https://i.pravatar.cc/150?u=sneha",
-      img: "/testimonial-2.jpg",
+      img: "testimonial-2.jpg",
       text: "Choosing the right university abroad is one of the biggest decisions a medical aspirant will make. Steth Overseas makes this process smooth, clear, and stress-free. A highly reliable consultancy that truly cares about the careers of its students."
     },
     {
       name: "Shaikh Musaib",
       university: "Asian International University",
       country: "Kyrgyzstan ",
-      img: "/testimonial-1.jpg",
+      img: "testimonial-1.jpg",
       text: "Studying in Kyrgyzstan has been an incredible experience, and I owe a lot of that to the Steth team. They made the entire documentation and visa process effortless. Their guidance allowed me to focus on my medical studies from starting."
     },
     {
@@ -34,7 +34,6 @@ export default function Testimonials() {
     {
       name: "Priya Das",
       university: "Tbilisi State Medical University",
-      img: "https://i.pravatar.cc/150?u=priya",
       country: "Georgia",
       img: "https://i.pravatar.cc/150?u=aditya",
       text: "Choosing Steth was the best decision. From visa processing to finding a local Indian mess in Tbilisi, they supported me like family. Now in my 3rd year, I couldn't be happier."
