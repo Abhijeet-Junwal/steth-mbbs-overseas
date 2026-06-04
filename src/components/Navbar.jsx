@@ -74,7 +74,7 @@ export default function Navbar() {
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex space-x-10 font-bold text-xs tracking-widest text-white">
-            {['HOME', 'ABOUT US', 'COUNTRIES', 'BLOG', 'CONTACT'].map((item) => {
+            {['HOME', 'ABOUT US', 'COUNTRIES', 'BLOG', 'MENTORS' , 'CONTACT'].map((item) => {
             const href = item === 'HOME' ? '/' : `/${item.toLowerCase().replace(" ", "")}`;
 
             return (
@@ -124,7 +124,7 @@ export default function Navbar() {
           {/* Background Decorative Element */}
           <div className="absolute top-[-10%] left-[-10%] w-64 h-64 bg-medical/10 rounded-full blur-[100px] pointer-events-none"></div>
 
-          {['HOME', 'ABOUT US', 'COUNTRIES', 'BLOG', 'CONTACT'].map((item) => (
+          {['HOME', 'ABOUT US', 'COUNTRIES', 'BLOG', 'MENTORS', 'CONTACT'].map((item) => (
              <Link 
                key={item}
                onClick={() => setIsOpen(false)} 

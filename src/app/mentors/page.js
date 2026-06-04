@@ -12,7 +12,7 @@ export default function MentorsPage() {
       experience: "Ex-Assistant Professor & Premier Clinical Institutional Consultant",
       bio: "Dr. Arun Swami is the elite cornerstone of the advisory board at Steth MBBS Overseas. A veteran clinician and former Assistant Professor, his medical career spans decades of intricate surgical practice and high-level medical pedagogy. Dr. Swami monitors the academic viability, clinical training safety frameworks, and global rankings of international state universities before they are recommended to Indian students. His evaluation metrics ensure complete alignment with National Medical Commission (NMC) guidelines and World Health Organization (WHO) benchmarks, guaranteeing that students don't just secure degrees, but transform into top-tier global medical practitioners.",
       impact: "Oversees macro-level university screening, clinical research integration, and long-term residency blueprints for our students across global destinations.",
-      imagePath: "/Arun.png", // Place his photo in public/arun.jpg
+      imagePath: "/Arun.PNG", // Place his photo in public/arun.jpg
       badge: "Institutional Board Chair",
       icon: <HiOutlineAcademicCap />
     },
@@ -23,7 +23,7 @@ export default function MentorsPage() {
       experience: "7+ Years in Foreign University Alignment & International Logistics",
       bio: "Dr. Ritik Swami brings a deep, contemporary understanding of foreign medical curriculum layouts, international student welfare laws, and on-ground campus logistics. As an MBBS graduate, he approaches student counseling from a peer perspective rather than a transactional one. Dr. Ritik works directly on the front lines, matching an aspirant's NEET score, raw budget, and clinical preferences to the perfect geographic hub. He maps out the comprehensive verification processing, handles legal transcripts, coordinates directly with the ministries of foreign destinations, and leads the dedicated on-ground teams that support our Indian student communities abroad from day one to graduation.",
       impact: "Leads the core medical counseling workflow, document parsing, eligibility matching, and direct international admission execution.",
-      imagePath: "/Ritik.jpg", // Place his photo in public/ritik.jpg
+      imagePath: "/ritik.JPG", // Place his photo in public/ritik.jpg
       badge: "Lead Admission Architect",
       icon: <HiOutlineCheck />
     },
@@ -34,7 +34,7 @@ export default function MentorsPage() {
       experience: "22+ Years of Elite CBSE Senior Secondary & Medical Entrance Prep",
       bio: "Mr. Shashank Kumar Jain is a legendary figure in biology education and academic leadership with over 22 years of elite experience in senior secondary CBSE education and pre-medical entrance test preparation. As a former Head of Department, CBSE Class XII Board Deputy Superintendent, and appointed Head Examiner for Biology evaluation, his grasp over conceptual biological sciences is unmatched. At Steth MBBS Overseas, Mr. Jain structures the foundational academic prep modules in Botany and Zoology. He bridges the gap between Indian high school frameworks and international pre-med standards, preparing students deeply to tackle demanding foreign medical licensing exam standards effortlessly.",
       impact: "Heads the pre-departure academic preparation layouts, concept-driven biology training systems, and global medical licensing exam adaptability strategies.",
-      imagePath: "/shashank.jpg", // Place his photo in public/shashank.jpg
+      imagePath: "/shashank.JPG", // Place his photo in public/shashank.jpg
       badge: "22+ Yrs CBSE Head Examiner",
       icon: <HiOutlineBriefcase />
     }
