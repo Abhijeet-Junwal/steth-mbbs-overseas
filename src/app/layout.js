@@ -19,16 +19,27 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Steth MBBS Overseas | Trusted Abroad Medical Consultants",
-  description: "Secure your MBBS admission in Russia, Uzbekistan, Georgia & Egypt with Steth MBBS Overseas. 100% Visa success and NMC approved universities.",
+  description: "Secure your MBBS admission in Russia, Uzbekistan, Georgia & Armenia with Steth MBBS Overseas. 100% Visa success and NMC approved universities.",
   keywords: ["MBBS abroad", "Study MBBS in Russia", "Medical consultancy India", "Steth MBBS", "MBBS Overseas", "MBBS in Kyrgyzstan", "MBBS in Uzbekistan", "MBBS in Georgia", "MBBS in Armenia"],
+
   openGraph: {
     title: "Steth MBBS Overseas",
-    description: "Your gateway to global medical excellence.",
-    images: ["/og-image.jpg"], // Create a nice preview image for WhatsApp/Facebook sharing
+    description: "Your gateway to global medical education.",
+    url: 'https://stetheducation.com',
+    siteName: 'Steth MBBS Overseas',
+    images: [
+      {
+        url: "/logo without text.PNG", // Make sure this is in your /public folder
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'en_IN',
+    type: 'website',
   },
   icons: {
-    icon: '/icon.png', // This points to public/icon.png if you put it there
-    apple: '/icon.png', // For iPhones
+    icon: '/icon.PNG', // This points to public/icon.png if you put it there
+    apple: '/icon.PNG', // For iPhones
   },
 };
 

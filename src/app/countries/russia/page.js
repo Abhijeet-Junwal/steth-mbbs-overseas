@@ -7,29 +7,32 @@ export default function RussiaMBBSFullContent() {
     const [activeFaq, setActiveFaq] = useState(null);
     
     // const universities = [
-    //     { name: "Kazan State Medical University", established: "1814", fee: "₹5.50L / Yr", total: "₹33.00L" },
-    //     { name: "Orenburg State Medical University", established: "1944", fee: "₹4.80L / Yr", total: "₹28.80L" },
-    //     { name: "Bashkir State Medical University", established: "1932", fee: "₹3.60L / Yr", total: "₹21.60L" },
-    //     { name: "Mari State University", established: "1972", fee: "₹3.80L / Yr", total: "₹22.80L" },
-    //     { name: "Perm State Medical University", established: "1916", fee: "₹4.20L / Yr", total: "₹25.20L" },
-    //     { name: "Pirogov Russian NRM University", established: "1906", fee: "₹6.10L / Yr", total: "₹36.60L" },
+        //     { name: "Orenburg State Medical University", established: "1944", fee: "₹4.80L / Yr", total: "₹28.80L" },
+        //     { name: "Bashkir State Medical University", established: "1932", fee: "₹3.60L / Yr", total: "₹21.60L" },
+        //     { name: "Mari State University", established: "1972", fee: "₹3.80L / Yr", total: "₹22.80L" },
+        //     { name: "Perm State Medical University", established: "1916", fee: "₹4.20L / Yr", total: "₹25.20L" },
+        //     { name: "Pirogov Russian NRM University", established: "1906", fee: "₹6.10L / Yr", total: "₹36.60L" },
     //     { name: "I.M. Sechenov First Moscow State", established: "1758", fee: "₹8.50L / Yr", total: "₹51.00L" },
     //     { name: "Volgograd State Medical University", established: "1935", fee: "₹4.50L / Yr", total: "₹27.00L" },
     //     { name: "Crimea Federal University", established: "1918", fee: "₹3.10L / Yr", total: "₹18.60L" },
     //     { name: "Siberian State Medical University", established: "1888", fee: "₹4.40L / Yr", total: "₹26.40L" },
     //     { name: "Tver State Medical University", established: "1936", fee: "₹4.10L / Yr", total: "₹24.60L" },
-    //     { name: "Kursk State Medical University", established: "1935", fee: "₹4.90L / Yr", total: "₹29.40L" },
-    //     { name: "Omsk State Medical University", established: "1920", fee: "₹2.90L / Yr", total: "₹17.40L" },
     //     { name: "Far Eastern Federal University", established: "2010", fee: "₹4.30L / Yr", total: "₹25.80L" },
     //     { name: "Pskov State University", established: "1932", fee: "₹2.70L / Yr", total: "₹16.20L" },
     //   ];
-
+    
     const universities = [
-        { name: "Ural State Medical University", established: "1930", fee: "₽ 3.6L / Yr", total: "₽ 21.6L" },
-        { name: "Samara State Medical University", established: "1957", fee: "₽ 4.5L / Yr", total: "₽ 27.00L" },
-        { name: "Kabardino Balkarian State Medical University", established: "1932", fee: "₽ 3.24L / Yr", total: "₽ 19.44L" },
-        { name: "North Caucasian State Academy", established: "1936", fee: "₽ 3.5L / Yr", total: "₽ 21.00L" },
-        { name: "Amur State Medical Academy", established: "1952", fee: "₽ 3.25L / Yr", total: "₽ 19.50L" },
+        { name: "Ural State Medical University", established: "1930", fee: "₽ 3.6L / Yr", Org: "Government" },
+        { name: "Samara State Medical University", established: "1957", fee: "₽ 4.5L / Yr", Org: "Government" },
+        { name: "Kabardino Balkarian State Medical University", established: "1932", fee: "₽ 3.95L / Yr", Org: "Government" },
+        { name: "North Caucasian State Academy", established: "1936", fee: "₽ 3.5L / Yr", Org: "Government" },
+        { name: "Amur State Medical Academy", established: "1952", fee: "₽ 3.25L / Yr", Org: "Government" },
+        { name: "Kazan Federal University", established: "1920", fee: "₽ 5.94L / Yr", Org: "Government"  },
+        { name: "Kirov State Medical University", established: "1935", fee: "₽ 3.60L / Yr", Org: "Government" },
+        { name: "Chita State Medical University", established: "1935", fee: "₽ 3.20L / Yr", Org: "Government" },
+        { name: "Northern State Medical University", established: "1935", fee: "₽ 3.50L / Yr", Org: "Government" },
+        { name: "Omsk State Medical University", established: "1920", fee: "₽ 3.70L / Yr", Org: "Government"  },
+        { name: "Kazan State Medical University", established: "1814", fee: "₽ 6.00L / Yr", total: "₹33.00L", Org: "Government" },
       ];
     
     const faqs = [
@@ -252,8 +255,8 @@ export default function RussiaMBBSFullContent() {
                     <tr className="bg-navy text-white text-left text-sm uppercase tracking-widest">
                         <th className="p-6">University Name</th>
                         <th className="p-6">Est. Year</th>
-                        <th className="p-6">Tuition / Year</th>
-                        <th className="p-6">Total Package</th>
+                        <th className="p-6">Organisation</th>
+                        <th className="p-6">Tuition Fee / Year</th>
                     </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-100">
@@ -261,8 +264,8 @@ export default function RussiaMBBSFullContent() {
                         <tr key={idx} className="hover:bg-ghost transition-colors">
                         <td className="p-6 font-bold text-navy">{uni.name}</td>
                         <td className="p-6 text-gray-500">{uni.established}</td>
+                        <td className="p-6 font-medium">{uni.Org}</td>
                         <td className="p-6 text-medical font-black">{uni.fee}</td>
-                        <td className="p-6 font-bold">{uni.total}</td>
                         </tr>
                     ))}
                     </tbody>

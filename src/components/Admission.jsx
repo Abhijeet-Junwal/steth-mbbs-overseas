@@ -30,12 +30,6 @@ export default function AdmissionJourney() {
                 {step.desc}
               </p>
               
-              {/* Subtle Arrow for Desktop */}
-              {idx !== 3 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 translate-x-1/2 -translate-y-1/2 text-gray-200 text-3xl">
-                  →
-                </div>
-              )}
             </div>
           ))}
           
