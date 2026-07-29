@@ -10,15 +10,17 @@ import AdmissionJourney from "@/components/Admission";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import SocialSidebar from "@/components/SocialSidebar";
 import Hero from "@/components/Hero";
+import Popup from "@/components/Popup";
+import LeadCaptureSection from "@/components/LeadCaptureSection";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white overflow-x-hidden">
       {/* <Navbar /> */}
+      <Popup />
       
-      
-
       <Hero />
+      <LeadCaptureSection />
       <Stats />
       <Services />
       <AdmissionJourney /> 
@@ -29,4 +31,5 @@ export default function Home() {
     </main>
   );
 }
+
 

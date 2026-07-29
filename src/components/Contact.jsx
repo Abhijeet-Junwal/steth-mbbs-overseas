@@ -1,40 +1,8 @@
 "use client";
-import { useState } from 'react';
-import { HiOutlineChatBubbleBottomCenterText, HiOutlineArrowRight } from "react-icons/hi2";
-import { FaCircleInfo } from "react-icons/fa6";
+import { HiOutlineChatBubbleBottomCenterText } from "react-icons/hi2";
+import ContactForm from './ContactForm';
 
 export default function Contact() {
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    const formData = {
-      Name: e.target.fullName.value,
-      WhatsApp: e.target.phone.value,
-      NEET_Score: e.target.neet.value,
-      Country: "General Inquiry"
-    };
-
-    try {
-      await fetch('https://script.google.com/macros/s/AKfycbxzS9IuyYttqmGG3-T_Upks7dkfg4oH8gqwYebBsgPaK-pSmlHqjsgLQiIHEtzP8KjH/exec', {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-
-      alert("Request received! Our team will call you shortly.");
-      e.target.reset();
-    } catch (err) {
-      console.error(err);
-      alert("Error sending request. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <section className="py-12 md:py-24 bg-white" id="contact">
       <div className="max-w-7xl mx-auto px-4w md:px-6">
@@ -68,63 +36,11 @@ export default function Contact() {
 
             {/* The Form Container */}
             <div className="bg-white rounded-[32px] md:rounded-[40px] p-6 md:p-12 shadow-xl">
-              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
-                <div>
-                  <label className="text-[10px] md:text-[12px] font-black uppercase tracking-widest text-gray-800 ml-1 mb-2 block">Full Name</label>
-                  <input 
-                    name="fullName"
-                    type="text" 
-                    placeholder="Eg. Rahul Verma" 
-                    required
-                    className="w-full p-4 md:p-5 bg-ghost rounded-xl md:rounded-2xl border-none focus:ring-2 focus:ring-medical font-bold text-navy transition-all placeholder:text-gray-300" 
-                  />
-                </div>
-                
-                {/* Mobile: Stacks vertically | Desktop: Side-by-side */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-                    <div>
-                        <label className="text-[10px] md:text-[12px] font-black uppercase tracking-widest text-gray-800 ml-1 mb-2 block">WhatsApp Number</label>
-                        <input 
-                          name="phone"
-                          type="tel" 
-                          placeholder="+91 00000 00000" 
-                          required
-                          className="w-full p-4 md:p-5 bg-ghost rounded-xl md:rounded-2xl border-none focus:ring-2 focus:ring-medical font-bold text-navy" 
-                        />
-                    </div>
-                    <div>
-                        <label className="text-[10px] md:text-[12px] font-black uppercase tracking-widest text-gray-800 ml-1 mb-2 block">Expected NEET Score</label>
-                        <input 
-                          name="neet"
-                          type="number" 
-                          placeholder="450" 
-                          required
-                          className="w-full p-4 md:p-5 bg-ghost rounded-xl md:rounded-2xl border-none focus:ring-2 focus:ring-medical font-bold text-navy" 
-                        />
-                    </div>
-                </div>
-
-                <div className="flex items-start gap-2">
-                  <FaCircleInfo className="mt-0.5 text-sm md:text-base flex-shrink-0" />
-                  <label className="text-[8px] md:text-[10px] font-mono tracking-widest">
-                    By clicking the submit button, I agree to the Terms of Service and Privacy
-                    Policy and consent to receive communications from StethMBBS.
-                  </label>
-                </div>
-
-                <button 
-                  type="submit"
-                  disabled={loading}
-                  className="w-full bg-medical text-white py-5 md:py-6 rounded-xl md:rounded-2xl font-black text-xs uppercase tracking-[0.2em] flex items-center justify-center gap-3 hover:bg-navy transition-all shadow-lg active:scale-95 group disabled:opacity-50"
-                >
-                  {loading ? "Sending..." : "Request for CallBack"}
-                  {!loading && <HiOutlineArrowRight className="text-lg group-hover:translate-x-1 transition-transform" />}
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
       </div>
     </section>
   );
-}
+}
