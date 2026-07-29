@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import { HiOutlineChatBubbleBottomCenterText, HiOutlineArrowRight } from "react-icons/hi2";
+import { FaCircleInfo } from "react-icons/fa6";
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
@@ -101,6 +102,14 @@ export default function Contact() {
                           className="w-full p-4 md:p-5 bg-ghost rounded-xl md:rounded-2xl border-none focus:ring-2 focus:ring-medical font-bold text-navy" 
                         />
                     </div>
+                </div>
+
+                <div className="flex items-start gap-2">
+                  <FaCircleInfo className="mt-0.5 text-sm md:text-base flex-shrink-0" />
+                  <label className="text-[8px] md:text-[10px] font-mono tracking-widest">
+                    By clicking the submit button, I agree to the Terms of Service and Privacy
+                    Policy and consent to receive communications from StethMBBS.
+                  </label>
                 </div>
 
                 <button 
