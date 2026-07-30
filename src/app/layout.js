@@ -1,11 +1,11 @@
-import { Geist, Geist_Mono, } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 // Configure the Body Font
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,13 +49,27 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`h-full antialiased`}
     >
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-494789662"
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-494789662');
+          `}
+        </Script>
+      </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
         <WhatsAppButton/>
         <Footer />
-        </body>
-
+      </body>
     </html>
   );
 }
