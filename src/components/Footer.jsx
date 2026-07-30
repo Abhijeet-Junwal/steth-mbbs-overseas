@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { 
   HiOutlineEnvelope, HiOutlinePhone, HiOutlineMapPin,
   HiOutlineArrowRight
@@ -66,25 +67,35 @@ export default function Footer() {
           <div>
             <h4 className="text-medical font-black text-[10px] uppercase tracking-[0.3em] mb-8">Navigation</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><a href="/" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
+              <li><Link href="/" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
                 <HiOutlineArrowRight className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all text-medical" />
                 Home
-              </a></li>
+              </Link></li>
 
-              <li><a href="about_us" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
+              <li><Link href="/aboutus" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
                 <HiOutlineArrowRight className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all text-medical" />
                 About Us
-              </a></li>
+              </Link></li>
 
-              <li><a href="countries" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
+              <li><Link href="/countries" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
                 <HiOutlineArrowRight className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all text-medical" />
                 Countries
-              </a></li>
+              </Link></li>
 
-              <li><a href="contact" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
+              <li><Link href="/contact" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
                 <HiOutlineArrowRight className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all text-medical" />
                 Contact Us
-              </a></li>
+              </Link></li>
+
+              <li><Link href="/terms-and-conditions" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
+                <HiOutlineArrowRight className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all text-medical" />
+                Terms & Conditions
+              </Link></li>
+
+              <li><Link href="/privacy-policy" className="text-white/60 hover:text-white transition-colors text-sm font-bold flex items-center group">
+                <HiOutlineArrowRight className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all text-medical" />
+                Privacy Policy
+              </Link></li>
             </ul>
           </div>
 
@@ -94,9 +105,9 @@ export default function Footer() {
             <ul className="grid grid-cols-1 gap-4">
               {countries.map((country) => (
                 <li key={country.slug}>
-                  <a href={`/countries/${country.slug}`} className="text-white/60 hover:text-white transition-colors text-sm font-bold">
+                  <Link href={`/countries/${country.slug}`} className="text-white/60 hover:text-white transition-colors text-sm font-bold">
                     MBBS in {country.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -110,9 +121,6 @@ export default function Footer() {
                 <HiOutlineMapPin className="text-medical text-xl shrink-0" />
                 <p className="text-white/60 text-xs leading-relaxed font-medium">
                   115 First Floor, Bhakatgarh Tower<br/> 10/1 New Palasiya, Indore, M.P. , India <br/>Pin Code - 452001
-                </p>
-                <p className="text-white/60 text-xs leading-relaxed font-medium">
-                  
                 </p>
               </div>
               <div className="flex gap-4">
@@ -133,8 +141,8 @@ export default function Footer() {
             © {currentYear} STETH MBBS OVERSEAS. ALL RIGHTS RESERVED.
           </p>
           <div className="flex gap-8 text-white/30 text-[10px] font-black uppercase tracking-widest">
-            <a href="#" className="hover:text-medical transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-medical transition-colors">Terms of Service</a>
+            <Link href="/privacy-policy" className="hover:text-medical transition-colors">Privacy Policy</Link>
+            <Link href="/terms-and-conditions" className="hover:text-medical transition-colors">Terms & Conditions</Link>
           </div>
         </div>
       </div>

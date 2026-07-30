@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import Link from 'next/link';
 import { HiOutlineArrowRight } from "react-icons/hi2";
 import { FaCircleInfo } from "react-icons/fa6";
 
@@ -84,7 +85,7 @@ export default function ContactForm({ onSuccess }) {
           className="mt-0.5 h-4 w-4 rounded border-gray-300 text-medical focus:ring-medical accent-medical cursor-pointer flex-shrink-0"
         />
         <label htmlFor="termsConsent" className="text-[9px] md:text-[11px] text-gray-600 leading-tight font-medium cursor-pointer select-none">
-          I agree to the Terms of Service and Privacy Policy and consent to receive communications from StethMBBS.
+          I agree to the <Link href="/terms-and-conditions" className="text-medical font-bold underline">Terms &amp; Conditions</Link> and <Link href="/privacy-policy" className="text-medical font-bold underline">Privacy Policy</Link> and consent to receive communications from StethMBBS.
         </label>
       </div>
 
