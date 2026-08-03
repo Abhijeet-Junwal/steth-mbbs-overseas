@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import Stats from "@/components/Stats";
 import CountryGrid from "@/components/CountryGrid";
 import Testimonials from "@/components/Testimonials";
+import YouTubeShorts from "@/components/YouTubeShorts";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import AdmissionJourney from "@/components/Admission";
@@ -27,6 +28,7 @@ export default function Home() {
       <WhyChooseUs />
       <CountryGrid />
       <Testimonials />
+      <YouTubeShorts />
       <Contact />
     </main>
   );
