@@ -91,12 +91,15 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* MAP EMBED PLACEHOLDER */}
-            <div className="w-full h-[400px] bg-ghost rounded-[60px] border border-gray-100 overflow-hidden relative shadow-inner">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0120040601087!2d75.8852328!3d22.7277952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd47098e09ed%3A0x180ca353626d3205!2sBakhatgarh%20Tower!5e0!3m2!1sen!2sin!4v1775997620965!5m2!1sen!2sin"
-               className="w-full h-full grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all" 
-               style={{border:0}} 
-               allowFullScreen="" 
+            {/* MAP EMBED */}
+            <div className="w-full h-[450px] bg-ghost rounded-[60px] border border-gray-100 overflow-hidden relative shadow-inner">
+               <iframe 
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.010780485824!2d75.8826168761826!3d22.727840679381487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd8ae408e9ff%3A0x947e15d36cbcf20b!2sSTETH%20EDUCATION!5e0!3m2!1sen!2sin!4v1785756402468!5m2!1sen!2sin"
+                 className="w-full h-full border-0"
+                 style={{ border: 0 }}
+                 allowFullScreen
+                 loading="lazy"
+                 referrerPolicy="strict-origin-when-cross-origin"
                ></iframe>
             </div>
 

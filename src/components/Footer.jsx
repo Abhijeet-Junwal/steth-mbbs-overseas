@@ -4,8 +4,7 @@ import {
   HiOutlineEnvelope, HiOutlinePhone, HiOutlineMapPin,
   HiOutlineArrowRight
 } from "react-icons/hi2";
-import { FaInstagram, FaYoutube, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaYoutube, FaGoogle } from "react-icons/fa";
 
 
 export default function Footer() {
@@ -19,11 +18,10 @@ export default function Footer() {
   ];
 
   const socials = [
-    { icon: <FaInstagram />, link: "https://www.instagram.com/steth_overseas?igsh=ZXFicGhldnZiN2Ji" },
-    { icon: <FaFacebookF />, link: "#" },
-    { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/steth-overseas-education-5514b8401?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
-    // { icon: <FaYoutube />, link: "#" },
-    { icon: <FaXTwitter />, link: "https://x.com/StethEducation" },
+    { icon: <FaInstagram />, link: "https://www.instagram.com/stethoverseas/?hl=en" },
+    { icon: <FaFacebookF />, link: "https://www.facebook.com/profile.php?id=61590128561867" },
+    { icon: <FaYoutube />, link: "https://youtube.com/@steth06?si=aazRHB_hDKjwwW9C" },
+    { icon: <FaGoogle />, link: "https://www.google.com/maps/place/STETH+EDUCATION/@22.7278407,75.8826169,17z/data=!3m1!4b1!4m6!3m5!1s0x3962fd8ae408e9ff:0x947e15d36cbcf20b!8m2!3d22.7278407!4d75.8851918!16s%2Fg%2F11zbgl0jsz?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" },
   ];
 
   return (
